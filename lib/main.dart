@@ -1,6 +1,7 @@
 import 'package:chainhouse_flutter_app/screens/discover_screen.dart';
 import 'package:chainhouse_flutter_app/screens/logged_out_screen.dart';
 import 'package:chainhouse_flutter_app/screens/login_screen.dart';
+import 'package:chainhouse_flutter_app/screens/photo_open_screen.dart';
 import 'package:chainhouse_flutter_app/screens/register_screen.dart';
 import 'package:chainhouse_flutter_app/screens/route_app.dart';
 import 'package:chainhouse_flutter_app/screens/signup_screen.dart';

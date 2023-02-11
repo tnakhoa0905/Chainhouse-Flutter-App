@@ -11,6 +11,6 @@ class ImageItem extends StatefulWidget {
 class _ImageItem extends State<ImageItem> {
   @override
   Widget build(BuildContext context) {
-    return Image(image: AssetImage(widget.image));
+    return Image(fit: BoxFit.fill, image: AssetImage(widget.image));
   }
 }

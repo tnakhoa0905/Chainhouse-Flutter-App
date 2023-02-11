@@ -37,14 +37,55 @@ class _DiscoverScreen extends State<DiscoverScreen> {
                         fontSize: 13, fontWeight: FontWeight.w900)),
               ),
               SizedBox(height: 387, child: _buildListNew(context)),
+              const SizedBox(
+                height: 44,
+              ),
+              Text(
+                'BROWSER ALL',
+                style: GoogleFonts.roboto(
+                    textStyle: const TextStyle(
+                        fontSize: 13, fontWeight: FontWeight.w900)),
+              ),
+              const SizedBox(
+                height: 24,
+              ),
               StaggeredGridView.countBuilder(
                   shrinkWrap: true,
                   crossAxisCount: 4,
-                  physics: NeverScrollableScrollPhysics(),
+                  crossAxisSpacing: 9,
+                  mainAxisSpacing: 9,
+                  physics: const NeverScrollableScrollPhysics(),
                   itemCount: images.length,
                   itemBuilder: (context, index) =>
                       ImageItem(image: images[index]),
-                  staggeredTileBuilder: ((index) => StaggeredTile.fit(2)))
+                  staggeredTileBuilder: ((index) =>
+                      const StaggeredTile.fit(2))),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: 52,
+                child: ElevatedButton(
+                    style: ButtonStyle(
+                        elevation: const MaterialStatePropertyAll<double>(3),
+                        shadowColor: const MaterialStatePropertyAll<Color?>(
+                            Colors.white),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                    side:
+                                        const BorderSide(color: Colors.black))),
+                        backgroundColor: const MaterialStatePropertyAll<Color?>(
+                            Colors.white)),
+                    onPressed: () {},
+                    child: Text(
+                      'SEE MORE',
+                      style: GoogleFonts.roboto(
+                          textStyle: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.black)),
+                    )),
+              )
             ]),
       ),
     );
