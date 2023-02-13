@@ -113,7 +113,7 @@ class _ProlifeScreen extends State<ProlifeScreen> {
                 staggeredTileBuilder: ((index) => const StaggeredTile.fit(2))),
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 52,
+              height: 54,
               child: ElevatedButton(
                   style: ButtonStyle(
                       elevation: const MaterialStatePropertyAll<double>(3),
